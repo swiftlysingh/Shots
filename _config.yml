@@ -3,11 +3,11 @@ image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 
 # UI configs
-title: "Photography by Pushpinder Pal Singh"
+title: "Shots by Pushpinder Pal Singh"
 subtitle: "See the world through my eyes!"
 author:  "Pushpinder Pal Singh"
 header:
- title: "Photography"
+ title: "Shots"
  subtitle: "by Pushpinder Pal Singh"
 footer:
  name: "Hey there, I am Pushpinder Pal Singh "
