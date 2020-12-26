@@ -16,4 +16,8 @@ jobs:
     - uses: actions/checkout@v2
       
     - run: npm install
+    - run: |
+        sudo add-apt-repository ppa:dhor/myway
+        sudo apt-get update
+        sudo apt-get install graphicsmagick
     - run: gulp
