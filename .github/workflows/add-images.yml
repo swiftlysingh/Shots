@@ -29,5 +29,6 @@ jobs:
         push-branch: 'master'
         commit-message: 'publish'
         force-add: 'true'
+        files: images/* 
         name: pushpinder
         email: pushpinderpal19@gmail.com
