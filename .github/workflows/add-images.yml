@@ -21,6 +21,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install graphicsmagick
     - run: gulp
+    - run: git add .
     
     - name: push
       uses: github-actions-x/commit@v2.7
