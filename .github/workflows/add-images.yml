@@ -21,11 +21,13 @@ jobs:
         sudo apt-get update
         sudo apt-get install graphicsmagick
     - run: gulp
-    - run: git add .
-    - run: git commit -m "New Images"
-    
+   
     - name: push
       uses: github-actions-x/commit@v2.7
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         push-branch: 'master'
+        commit-message: 'publish'
+        force-add: 'true'
+        name: pushpinder
+        email: pushpinderpal19@gmail.com
