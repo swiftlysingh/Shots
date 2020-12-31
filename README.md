@@ -1,5 +1,5 @@
 
-[![Photography](https://img.shields.io/badge/Photography-Shots-black?style=for-the-badge)](https://shots.pushpinderpalsingh.com/)
+[![Photography](https://img.shields.io/badge/Photography-Shots-black?style=for-the-badge)](https://shots.pushpinderpalsingh.com/) [![AutShots](https://img.shields.io/badge/AutoShots-black?style=for-the-badge)](https://github.com/pushpinderpalsingh/AutoShots)
 # Shots 
 A tracker and ad free version of [rampatra/photography](https://github.com/rampatra/photography)
 
@@ -22,7 +22,9 @@ it's hosted by GitHub for __free__.
 5. Update `baseurl` field in `_config.yml` file with whatever domain you used in step 4.
 6. And that's it, your website is set. To view, go to [shots.pushpinderpalsingh.com/](https://shots.pushpinderpalsingh.com/) (or whatever you have in the CNAME file) and if you don't have one, you can go to [[yourusername].github.io/photography](http://yourusername.github.io/photography)
 
-And of course, you don't want my name at the bottom to show up. You can change it in `_config.yml` file as well as few other settings like your google analytics etc.
+You can change my name in `_config.yml` file.
+
+You can also autmate the deployement of your new Photos using [AutoShots](https://github.com/pushpinderpalsingh/AutoShots)
 
 ## Acknowledgment
 - I am not a web developer. All the credit for this website goes to [Ram](https://github.com/rampatra).
