@@ -1,4 +1,6 @@
-# Photography 
+
+[![Photography](https://img.shields.io/badge/Photography-Shots-black?style=for-the-badge)](https://shots.pushpinderpalsingh.com/)
+# Shots 
 A tracker and ad free version of [rampatra/photography](https://github.com/rampatra/photography)
 
 ## Highlights
