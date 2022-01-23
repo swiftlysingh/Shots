@@ -24,14 +24,7 @@
 
 	body {
 		line-height: 1;
-		-ms-overflow-style: none; /* for Internet Explorer, Edge */
-		scrollbar-width: none; /* for Firefox */
-		overflow-y: scroll; 
-	  }
-	  
-	  body::-webkit-scrollbar {
-		display: none; /* for Chrome, Safari, and Opera */
-	  }
+	}
 
 	ol, ul {
 		list-style: none;
@@ -53,6 +46,9 @@
 
 	body {
 		-webkit-text-size-adjust: none;
+	}
+	*::-webkit-scrollbar {
+		display: none;
 	}
 
 /* Box Model */
@@ -134,7 +130,7 @@
 	}
 
 	body {
-		-ms-overflow-style: scrollbar;
+		-ms-overflow-style: none;
 	}
 
 	@media screen and (max-width: 480px) {
