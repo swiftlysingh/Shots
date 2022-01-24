@@ -59,6 +59,7 @@ jobs:
 
       - name: Update and push
         run: | 
+          rm images/*.jpeg
           git add images/*
           git commit -m "Convert JPEG"
           git push -f
