@@ -22,13 +22,9 @@ jobs:
         sudo apt-get install graphicsmagick
     - run: gulp
    
-    - name: push
-      uses: github-actions-x/commit@v2.7
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'master'
-        commit-message: 'publish'
-        force-add: 'true'
-        files: images/* 
-        name: runner
-        email: runner@example.com
+    - run: | 
+        git config --global user.email "bot@gmail.com"
+        git config --global user.name "bot"
+        git add .
+        git commit -m "Convert JPEG"
+        git push
