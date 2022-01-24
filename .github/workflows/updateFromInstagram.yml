@@ -35,5 +35,28 @@ jobs:
         working-directory: ./images
         env:
           COMMENT: ${{ github.event.comment.body }}
+  post:
+    name: Post to Shots
+    needs: get
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
       
+      - run: npm install
+
+      - run: |
+          sudo add-apt-repository ppa:dhor/myway
+          sudo apt-get update
+          sudo apt-get install graphicsmagick
+      
+      - run: gulp
+
+      - name: Check for updates and push
+        run: | 
+          git config --global user.email "bot@swiftlysingh.com"
+          git config --global user.name "bot"
+          git add .
+          git commit -m "Convert JPEG"
+          git push
+        
         
