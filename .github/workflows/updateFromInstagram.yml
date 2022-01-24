@@ -19,15 +19,30 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Creating Shot Name
+        if: ${{ github.actor == 'swiftlysingh' }}
+        run: |
+          export SHOT_NAME=$(date "+%m%d%H%M%y") 
+          echo $SHOT_NAME
+
+      - name: Extracting URL and Downloading Image
         if: ${{ github.actor == 'swiftlysingh' }}
         run: |
           export URL=$(echo $COMMENT|grep -Eo 'https://[^ >]+'\|head -1)
-          export SHOT_NAME=$(date "+%m%d%H%M%y")
-          echo $SHOT_NAME and $URL
+          echo $URL
           wget --output-document=$SHOT_NAME.jpeg $URL
-
-        working-directory: ./images  
+        working-directory: ./images
         env:
           COMMENT: ${{ github.event.comment.body }}
+
+      - name: Adding and Uploading Image
+        if: ${{ github.actor == 'swiftlysingh' }}
+        run: | 
+          git config --global user.email "bot@example.com"
+          git config --global user.name "ABot"
+          git add $SHOT_NAME.jpeg
+          git commit -m "Add Image from Instagram"
+          git push
+        working-directory: ./images  
+      
+        
