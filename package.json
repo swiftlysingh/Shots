@@ -1,14 +1,14 @@
 {
-  "name": "shots",
+  "name": "photography",
   "version": "3.0.0",
-  "description": "A jekyll website for photography",
+  "description": "A jekyll website for photographer cum developer",
   "main": "npmfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swiftlysingh/shots.git"
+    "url": "git+https://github.com/ramswaroop/photography.git"
   },
   "keywords": [
     "photography",
@@ -19,12 +19,12 @@
     "portfolio",
     "portfolio website"
   ],
-  "author": "Pushpinder Pal Singh",
+  "author": "Ram Patra",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/swiftlysingh/shots/issues"
+    "url": "https://github.com/ramswaroop/photography/issues"
   },
-  "homepage": "https://github.com/swiftlysingh/shots#readme",
+  "homepage": "https://github.com/ramswaroop/photography#readme",
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^4.0.2",
