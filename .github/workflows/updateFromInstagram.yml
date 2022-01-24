@@ -48,14 +48,15 @@ jobs:
           sudo add-apt-repository ppa:dhor/myway
           sudo apt-get update
           sudo apt-get install graphicsmagick
-      
-      - name: Update and push
-        run: | 
-          gulp
           git config --global user.email "bot@swiftlysingh.com"
           git config --global user.name "bot"
-          git add images/*
+      
+      - run: gulp
+
+      - name: Update and push
+        run: | 
+          git add .
           git commit -m "Convert JPEG"
-          git push
+          git push -f
         
         
