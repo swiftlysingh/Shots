@@ -42,20 +42,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - run: npm install
+      - run: npm install --force
 
       - run: |
           sudo add-apt-repository ppa:dhor/myway
           sudo apt-get update
           sudo apt-get install graphicsmagick
       
-      - run: gulp
-
-      - name: Check for updates and push
+      - name: Update and push
         run: | 
+          gulp
           git config --global user.email "bot@swiftlysingh.com"
           git config --global user.name "bot"
-          git add .
+          git add images/*
           git commit -m "Convert JPEG"
           git push
         
