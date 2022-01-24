@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-
+    if: ${{ github.event.head_commit.message == 'Add Image from Instagram'}}
     runs-on: ubuntu-latest
 
     steps:
@@ -21,9 +21,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install graphicsmagick
     - run: gulp
-   
-    - run: | 
-        git config --global user.email "bot@gmail.com"
+
+    - name: Check for updates and push
+      run: | 
+        git config --global user.email "bot@swiftlysingh.com"
         git config --global user.name "bot"
         git add .
         git commit -m "Convert JPEG"
