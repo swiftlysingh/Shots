@@ -55,12 +55,15 @@ jobs:
           sudo apt-get install graphicsmagick
           git config --global user.email "bot@swiftlysingh.com"
           git config --global user.name "bot"
+
+      - run: |
+          git pull
       
       - run: gulp
 
       - name: Update and push
         run: | 
-          git add .
+          git add images/*
           git commit -m "Convert JPEG"
           git push -f
         
