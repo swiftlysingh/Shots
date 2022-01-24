@@ -50,9 +50,7 @@ jobs:
       - run: npm install --force
 
       - run: |
-          sudo add-apt-repository ppa:dhor/myway
-          sudo apt-get update
-          sudo apt-get install graphicsmagick
+          npm install gulp-cli
           git config --global user.email "bot@swiftlysingh.com"
           git config --global user.name "bot"
       
