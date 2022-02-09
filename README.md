@@ -1,7 +1,7 @@
 
 [![Deployed from Instagram](https://github.com/swiftlysingh/Shots/actions/workflows/updateFromInstagram.yml/badge.svg)](https://github.com/swiftlysingh/Shots/actions/workflows/updateFromInstagram.yml)
 
-[![Photography](https://img.shields.io/badge/Photography-Shots-black?style=for-the-badge)](https://shots.swiftylsingh.com/) 
+[![Photography](https://img.shields.io/badge/Photography-Shots-black?style=for-the-badge)](https://shots.swiftlysingh.com/) 
 
 # Shots 
 A tracker and ad free version of [rampatra/photography](https://github.com/rampatra/photography) with automations. You can set up [Zapier Workflow](https://zapier.com/shared/c6dc58c746bbe5c1fd42d86c9bda39e75ca6610b) which will connect to Instagram.
