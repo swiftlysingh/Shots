@@ -58,8 +58,7 @@ jobs:
       - run: gulp
 
       - name: Update and push
-        run: | 
-          rm images/*.jpeg
+        run: |
           git add images/*
           git commit -m "Convert JPEG"
           git push -f
