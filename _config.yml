@@ -3,15 +3,15 @@ image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 
 # UI configs
-title: "Shots by Pushpinder Pal Singh"
-subtitle: "A chapter from my life"
-author:  "Pushpinder Pal Singh"
+title: "レンス"
+subtitle: "Pictures of people and places"
+author:  "Joey Wu"
 header:
- title: "Shots"
- subtitle: "by Pushpinder Pal Singh"
+ title: "レンス"
+ subtitle: "by Joey Wu"
 footer:
- name: "Hello World! 👋'"
- bio: "I’m a software developer who writes. And 3D print. And photograph. Basically, following my curiosity and trying to find my purpose on this beautiful big blue ball. Learn more at: https://swiftlysingh.com"
+ name: "Hello!'"
+ bio: "I like taking photos of people and landscapes. Still learning!"
 social_urls:
-  instagram: "https://www.instagram.com/pushpinderpalsingh_/"
-  twitter: "https://twitter.com/pushpinderpal_"
+  instagram: "https://www.instagram.com/joeywuuuuu"
+  twitter: "https://twitter.com/holeymeister"
